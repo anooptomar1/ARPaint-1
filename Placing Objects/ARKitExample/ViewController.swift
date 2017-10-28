@@ -166,8 +166,8 @@ class ViewController: UIViewController {
 		}
 	}
 			
-    func removePlane(anchor: ARPlaneAnchor) {
-		if let plane = planes.removeValue(forKey: anchor) {
+    func removePlane(ancchor: ARPlaneAnchor) {
+        if let plane = planes.removeValue(forKey: ancchor) {
 			plane.removeFromParentNode()
         }
     }

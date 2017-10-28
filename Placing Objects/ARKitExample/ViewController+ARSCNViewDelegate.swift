@@ -40,7 +40,7 @@ extension ViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
         serialQueue.async {
-            self.removePlane(anchor: planeAnchor)
+            self.removePlane(ancchor: planeAnchor)
         }
     }
     
